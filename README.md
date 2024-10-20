@@ -1,5 +1,14 @@
 # cuda_setup_on_Ubuntu
 
+## Remove previous installation
+Check out instructions for your specific CUDA version at https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#removing-cuda-toolkit
+
+## Install with Runfile
+1. Reboot into text mode (runlevel 3). This can usually be accomplished by adding the number “3” to the end of the system’s kernel boot parameters. (https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#runfile-installation)
+2. Find cuda toolkit at https://developer.nvidia.com/cuda-toolkit-archive
+3. Choose runfile and install
+4. Post-installation setups: https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#mandatory-actions
+
 ## Install Nvidia Driver
 - `sudo apt update` and `sudo apt upgrade`
 - Remove previous Nvidia installations: `sudo apt autoremove nvidia* --purge` and `sudo /usr/local/cuda-X.Y/bin/cuda-uninstaller` and `rm -rf /usr/local/cuda-X.Y` -> https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#handle-conflicting-installation-methods
